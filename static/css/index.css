@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(to top, #C69292, #35E5DD);
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 700px;
+}
+
+#pic-moon-cat {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url("../img/moon-cat.svg") no-repeat center center;
+}
