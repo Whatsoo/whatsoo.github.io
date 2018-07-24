@@ -39,10 +39,10 @@ body {
 
 #name>h1 {
     font-family: Righteous;
-    color: white;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    animation: letterspacing 5s 1 alternate forwards;
+    animation: letterspacing 3s 1 alternate forwards;
     display: block;
     position: absolute;
     left: 50%;
@@ -52,43 +52,33 @@ body {
 
 @keyframes letterspacing {
     0% {
-        letter-spacing: 0rem;
-        filter: blur(.3rem);
+        letter-spacing: -0.1rem;
+        filter: blur(.6rem) opacity(0);
     }
 
     50% {
-        filter: blur(.5rem);
+        letter-spacing: .2rem;
+        filter: blur(.3rem) opacity(.5);
     }
 
     100% {
         letter-spacing: .5rem;
-        filter: blur(0rem);
-        color: #fff;
+        filter: blur(0rem) opacity(1);
     }
 }
 
 #info {
-    /* font-family: Consolas;
-    font-size: 0.8rem;
-    color: #fff;
-    text-align: center;
-    line-height: 80%;
-    position: relative;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%,-50%);
-    overflow: hidden; */
     position: relative;
     left: 50%;
     top: 80%;
     transform: translate(-50%,-50%);
     font: bold 0.8rem Consolas, Monaco, monospace;
-    border-right: 0.1em solid;
     width: 88ch;
+    border-right: 0.1em solid;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 20s steps(88, end),
-    cursor-blink 0.3s step-end infinite alternate;
+    cursor-blink 0.6s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -112,7 +102,7 @@ body {
     left: 400px;
     position: absolute;
     transform-origin: 100% 0;
-    animation: star-ani 6s infinite linear;
+    animation: star-ani 5s infinite linear;
     box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.76);
     opacity: 0;
     z-index: 2;
@@ -121,55 +111,55 @@ body {
 .dubhe {
     top: 35%;
     left: 15%;
-    background: #C09595;
-    animation-delay: 7s;
+    background: #40DED6;
+    animation-delay: 11s;
 }
 
 .merak {
     top: 20%;
     left: 30%;
-    background: #0199A5;
-    animation-delay: 8s;
+    background: #40DED6;
+    animation-delay: 16s;
 }
 
 .phecda {
     top: 23%;
     left: 45%;
-    background: #EDF8F7;
-    animation-delay: 9s;
+    background: #40DED6;
+    animation-delay: 12s;
 }
 
 .megrez {
     top: 26%;
     left: 60%;
     background: #A29D9A;
-    animation-delay: 8.5s;
+    animation-delay: 14s;
 }
 
 .alioth {
     top: 50%;
     left: 65%;
-    background: #B69A9A;
-    animation-delay: 7.5s;
+    background: #40DED6;
+    animation-delay: 10s;
 }
 
 .mizar {
     top: 35%;
     left: 85%;
-    background: #96ADAA;
-    animation-delay: 9s;
+    background: #40DED6;
+    animation-delay: 13s;
 }
 
 .alkaid{
     top: 5%;
     left: 83%;
     background: #40DED6;
-    animation-delay: 6.5s;
+    animation-delay: 15s;
 }
 
 @keyframes star-ani{
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     25% {
@@ -177,14 +167,14 @@ body {
     }
 
     50% {
-        opacity: 1;
+        opacity: 0.2;
     }
 
     75% {
-        opacity: 0.75;
+        opacity: 0.5;
     }
 
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
