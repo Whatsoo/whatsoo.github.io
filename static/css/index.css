@@ -16,7 +16,6 @@ body {
     height: 100%;
 }
 
-
 #pic-moon-cat {
     text-align: center;
     border-radius: 50%;
@@ -25,7 +24,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: url("../img/moon-cat.svg") no-repeat center center;
 }
 
@@ -34,7 +33,7 @@ body {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 #name>h1 {
@@ -55,12 +54,10 @@ body {
         letter-spacing: -0.1rem;
         filter: blur(.6rem) opacity(0);
     }
-
     50% {
         letter-spacing: .2rem;
         filter: blur(.3rem) opacity(.5);
     }
-
     100% {
         letter-spacing: .5rem;
         filter: blur(0rem) opacity(1);
@@ -71,14 +68,13 @@ body {
     position: relative;
     left: 50%;
     top: 80%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font: bold 0.8rem Consolas, Monaco, monospace;
     width: 88ch;
     border-right: 0.1em solid;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 20s steps(88, end),
-    cursor-blink 0.6s step-end infinite alternate;
+    animation: typing 44s steps(88, end), cursor-blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -150,30 +146,26 @@ body {
     animation-delay: 13s;
 }
 
-.alkaid{
+.alkaid {
     top: 5%;
     left: 83%;
     background: #40DED6;
     animation-delay: 15s;
 }
 
-@keyframes star-ani{
+@keyframes star-ani {
     0% {
         opacity: 1;
     }
-
     25% {
         opacity: 0.5;
     }
-
     50% {
         opacity: 0.2;
     }
-
     75% {
         opacity: 0.5;
     }
-
     100% {
         opacity: 1;
     }
