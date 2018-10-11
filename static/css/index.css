@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background: linear-gradient(to top, #a8edea , #fed6e3);
+    background: linear-gradient(to top, #9ff0ec , #f8c2d3);
     width: 100%;
     height: 100%;
 }
@@ -38,7 +38,6 @@ body {
 
 #name>h1 {
     font-family: Righteous;
-    color: #fff;
     font-size: 1.5rem;
     text-transform: uppercase;
     animation: letterspacing 3s 1 alternate forwards;
@@ -47,6 +46,9 @@ body {
     left: 50%;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
+    background: linear-gradient(to right, #ee799e, #80f0ea);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 @keyframes letterspacing {
