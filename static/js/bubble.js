@@ -1,5 +1,5 @@
 //canvas-spirit
-var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
+var width, height, largeHeader, canvas, ctx, circles, animateHeader = true;
 
 // Main
 initHeader();
@@ -8,15 +8,11 @@ addListeners();
 function initHeader() {
     width = window.innerWidth;
     height = window.innerHeight;
-    target = {
-        x: 0,
-        y: height
-    };
 
-    largeHeader = document.getElementById('demo-canvas');
+    largeHeader = document.getElementById('bubble');
     largeHeader.style.height = height + 'px';
-
-    canvas = document.getElementById('demo-canvas');
+    largeHeader.style.width = width + 'px';
+    canvas = document.getElementById('bubble');
     canvas.width = width;
     canvas.height = height;
     ctx = canvas.getContext('2d');
