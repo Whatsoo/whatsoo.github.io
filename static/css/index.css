@@ -75,7 +75,7 @@ body {
     border-right: 0.1em solid;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 44s steps(88, end), cursor-blink 0.5s step-end infinite alternate;
+    animation: cursor-blink 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
